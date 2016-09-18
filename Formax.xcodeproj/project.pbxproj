@@ -17,6 +17,8 @@
 		C303177E1D7B117100542515 /* SignupPageCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C303177D1D7B117100542515 /* SignupPageCViewController.m */; };
 		C30317811D7B1CC700542515 /* SignupPageDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30317801D7B1CC700542515 /* SignupPageDViewController.m */; };
 		C30317841D7B2D2200542515 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30317831D7B2D2200542515 /* ForgotPasswordViewController.m */; };
+		C30F2FA51D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30F2FA41D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.m */; };
+		C30F2FA81D8ED5300054753B /* OfficeRegistrationGetStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30F2FA71D8ED5300054753B /* OfficeRegistrationGetStartedViewController.m */; };
 		C3421EBB1D84073E004D0195 /* OfficeRegistratonStepAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3421EBA1D84073E004D0195 /* OfficeRegistratonStepAViewController.m */; };
 		C3421EBE1D840750004D0195 /* OfficeRegistratonStepBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3421EBD1D840750004D0195 /* OfficeRegistratonStepBViewController.m */; };
 		C3421EC11D840767004D0195 /* OfficeRegistratonStepCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3421EC01D840767004D0195 /* OfficeRegistratonStepCViewController.m */; };
@@ -509,6 +511,10 @@
 		C30317801D7B1CC700542515 /* SignupPageDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupPageDViewController.m; path = ViewControllers/SessionViewControllers/SignupPageDViewController.m; sourceTree = "<group>"; };
 		C30317821D7B2D2200542515 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForgotPasswordViewController.h; path = ViewControllers/SessionViewControllers/ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		C30317831D7B2D2200542515 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForgotPasswordViewController.m; path = ViewControllers/SessionViewControllers/ForgotPasswordViewController.m; sourceTree = "<group>"; };
+		C30F2FA31D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeRegistrationSampleFormDisplayViewController.h; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistrationSampleFormDisplayViewController.h; sourceTree = "<group>"; };
+		C30F2FA41D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfficeRegistrationSampleFormDisplayViewController.m; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistrationSampleFormDisplayViewController.m; sourceTree = "<group>"; };
+		C30F2FA61D8ED5300054753B /* OfficeRegistrationGetStartedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeRegistrationGetStartedViewController.h; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistrationGetStartedViewController.h; sourceTree = "<group>"; };
+		C30F2FA71D8ED5300054753B /* OfficeRegistrationGetStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfficeRegistrationGetStartedViewController.m; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistrationGetStartedViewController.m; sourceTree = "<group>"; };
 		C3421EB91D84073E004D0195 /* OfficeRegistratonStepAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeRegistratonStepAViewController.h; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistratonStepAViewController.h; sourceTree = "<group>"; };
 		C3421EBA1D84073E004D0195 /* OfficeRegistratonStepAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfficeRegistratonStepAViewController.m; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistratonStepAViewController.m; sourceTree = "<group>"; };
 		C3421EBC1D840750004D0195 /* OfficeRegistratonStepBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeRegistratonStepBViewController.h; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistratonStepBViewController.h; sourceTree = "<group>"; };
@@ -1841,6 +1847,10 @@
 				C3421EBD1D840750004D0195 /* OfficeRegistratonStepBViewController.m */,
 				C3421EBF1D840767004D0195 /* OfficeRegistratonStepCViewController.h */,
 				C3421EC01D840767004D0195 /* OfficeRegistratonStepCViewController.m */,
+				C30F2FA31D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.h */,
+				C30F2FA41D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.m */,
+				C30F2FA61D8ED5300054753B /* OfficeRegistrationGetStartedViewController.h */,
+				C30F2FA71D8ED5300054753B /* OfficeRegistrationGetStartedViewController.m */,
 			);
 			name = OfficeRegistration;
 			sourceTree = "<group>";
@@ -2726,6 +2736,7 @@
 				C3AD54A31D86B64A00E2760F /* GixPDFFormSignatureInitialView.m in Sources */,
 				C3AD54171D858E0100E2760F /* SourceFormListTableViewCell.m in Sources */,
 				C3AD540B1D845CE200E2760F /* BuyNewAddOnServicesViewController.m in Sources */,
+				C30F2FA81D8ED5300054753B /* OfficeRegistrationGetStartedViewController.m in Sources */,
 				C3A3B5A21D76CE0800D16D18 /* JidXB2TextField.m in Sources */,
 				C3AD54251D868DC900E2760F /* SignatureViewController.m in Sources */,
 				C3A3B6291D76D0EB00D16D18 /* fileenc.c in Sources */,
@@ -2758,6 +2769,7 @@
 				C3AD54401D86B62E00E2760F /* GixPDFScrollViewController.m in Sources */,
 				C3AD54BF1D86B65500E2760F /* NDHTMLtoPDF.m in Sources */,
 				C3AD54081D845CCB00E2760F /* BuyNewSubscriptionViewController.m in Sources */,
+				C30F2FA51D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.m in Sources */,
 				C3AD54A81D86B64A00E2760F /* GixPDFFormSignatureView.m in Sources */,
 				C3A3B5CA1D76CF5B00D16D18 /* ProviderModelClass.m in Sources */,
 				C3A3B6391D76D0F600D16D18 /* unzip.c in Sources */,

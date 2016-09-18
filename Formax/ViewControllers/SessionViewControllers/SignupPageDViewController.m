@@ -92,7 +92,7 @@
     [appMngr SignupByRegistrationProfile:appMngr.registrationProfileForRegistrationProcess CompletionHandler:^(BOOL Succeeded, BOOL isUserAlreadyRegistered, BOOL isUserConfirmed, AWSCognitoIdentityProviderDeliveryMediumType DeliveryMediumType, NSString *Destination, NSString *MsgToUI) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [waitingAnimationVC dismiss];
-            ALog(@"Succeeded:%d  isUserAlreadyRegistered:%d  isUserConfirmed:%d DeliveryMediumType:%ld  Dest:%@  Msg:%@", Succeeded, isUserAlreadyRegistered, isUserConfirmed, DeliveryMediumType, Destination, MsgToUI);
+            ALog(@"Succeeded:%d  isUserAlreadyRegistered:%d  isUserConfirmed:%d DeliveryMediumType:%ld  Dest:%@  Msg:%@", Succeeded, isUserAlreadyRegistered, isUserConfirmed, (long)DeliveryMediumType, Destination, MsgToUI);
             if(Succeeded && !isUserConfirmed){
                 [self openConfirmSigninViewcontroller];
             }else if(Succeeded && isUserConfirmed){

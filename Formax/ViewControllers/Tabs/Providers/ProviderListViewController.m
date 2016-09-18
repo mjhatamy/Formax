@@ -6,21 +6,23 @@
 //  Copyright © 2016 Majid Hatami Aghdam. All rights reserved.
 //
 
-#import "SelectAProviderForSignViewController.h"
+#import "ProviderListViewController.h"
 #import "ProviderModelClass.h"
 #import "AppManager.h"
 #import "ProviderListTableViewCell.h"
 #import "AddProviderViewController.h"
 
-@interface SelectAProviderForSignViewController ()<AddProviderViewControllerDelegate>
+@interface ProviderListViewController ()<AddProviderViewControllerDelegate>
 {
     NSArray<ProviderModelClass *>* providersList;
     AppManager* appMngr;
+    
+    NSNumber* CurrentProviderId;
 }
 
 @end
 
-@implementation SelectAProviderForSignViewController
+@implementation ProviderListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,17 +36,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    NSLog(@"Appear");
-}
-
--(void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    NSLog(@"Disapear");
-}
-
 
 -(void)Refresh{
     [appMngr getAllProvidersByForcedRefresh:NO CompletionHanlder:^(NSArray<ProviderModelClass *> * _Nullable arr, BOOL Updated, BOOL Succeeded, NSError * _Nullable error, NSString * _Nullable MsgToUI) {
@@ -63,13 +54,13 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellIdentifier = @"ProviderListTableViewCellInPDF";
+    static NSString *cellIdentifier = @"ProviderListTableViewCell";
     ProviderListTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     cell.delegate = self;
     ProviderModelClass *obj = [providersList objectAtIndex:indexPath.row];
     
     [cell.photoImageView setImage:[UIImage imageWithData:obj.PhotoData]];
-    cell.photoImageView.layer.cornerRadius = cell.photoImageView.bounds.size.height/2;
+    cell.photoImageView.layer.cornerRadius = 30;//cell.photoImageView.bounds.size.height/2;
     if(cell.photoImageView.image.size.width <= 0){
         [cell.photoImageView setImage:[UIImage imageNamed:@"unknown_contact_140x140"]];
         cell.photoImageView.layer.borderColor = [UITools colorFromHexString:@"#EEEEEE"].CGColor;
@@ -161,17 +152,19 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     ProviderModelClass *pmc = [providersList objectAtIndex:indexPath.row];
-    [self dismissViewControllerAnimated:YES completion:^{
-        if([self.delegate conformsToProtocol:@protocol(SelectAProviderForSignViewControllerDelegate)] && [self.delegate respondsToSelector:@selector(onSelectAProviderForSignViewControllerSelectedProvider:)]){
-            [self.delegate onSelectAProviderForSignViewControllerSelectedProvider:pmc.ProviderId];
-        }
-    }];
+    CurrentProviderId = pmc.ProviderId;
+    [self performSegueWithIdentifier:@"gotoAddProviderViewControllerFromProvidersListViewControllerSegue" sender:self];
 }
 
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"gotoAddProviderFromSelectAProviderForSignViewControllerSegue"]){
+    if([segue.identifier isEqualToString:@"gotoAddProviderViewControllerFromProvidersListViewControllerSegue"]){
+        AddProviderViewController* vc = [segue destinationViewController];
+        vc.delegate = self;
+        vc.ProviderId = CurrentProviderId;
+        vc.ViewMode = PageViewModeView;
+    }else if([segue.identifier isEqualToString:@"gotoAddProviderViewControllerSegue"]){
         AddProviderViewController* vc = [segue destinationViewController];
         vc.delegate = self;
         vc.ProviderId = nil;
@@ -185,8 +178,8 @@
 
 - (IBAction)onContinueToolbarBtnPressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
-        if([self.delegate conformsToProtocol:@protocol(SelectAProviderForSignViewControllerDelegate)] && [self.delegate respondsToSelector:@selector(onSelectAProviderForSignViewControllerClosedDelegate)]){
-            [self.delegate onSelectAProviderForSignViewControllerClosedDelegate];
+        if([self.delegate conformsToProtocol:@protocol(ProviderListViewControllerDelegate)] && [self.delegate respondsToSelector:@selector(onProviderListViewControllerClosedDelegate)]){
+            [self.delegate onProviderListViewControllerClosedDelegate];
         }
     }];
 }

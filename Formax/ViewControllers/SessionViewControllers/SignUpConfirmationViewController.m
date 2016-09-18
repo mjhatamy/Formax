@@ -73,8 +73,7 @@
             }else {
                 //return to signin screen
                 //((SignInViewController *)self.navigationController.viewControllers[0]).usernameText = self.user.username;
-                //[self.navigationController popToRootViewControllerAnimated:YES];
-                NSLog(@"%@ -- %@", _Username, _Password);
+                //[self.navigationController popToRootViewControllerAnimated:YES]; 
                 [appMngr openSignInViewControllerAsRootViewControllerWithUsername:_Username Password:_Password];
                 
             }
@@ -126,4 +125,17 @@
         
     }];
 }
+
+- (IBAction)onResendCodeToolbarBtnPressed:(id)sender {
+    [appMngr.mscs ResendConfirmationForUsername:[appMngr.mscs getCurrentUser].username CompletionHandler:^(BOOL Succeeded, AWSCognitoIdentityProviderDeliveryMediumType DeliveryMediumType, NSString *Destination, NSString *MsgToUI) {
+        if(Succeeded){
+            [UITools ShowOkAlertDialogWithUIViewController:self Title:[NSString stringWithFormat:@"Message sent to %@", Destination] andMessage:MsgToUI];
+        }else{
+            [UITools ShowErrorOkAlertDialogWithUIViewController:self Title:@"Resending code Failed" andMessage:MsgToUI];
+        }
+    }];
+}
+
+
+
 @end

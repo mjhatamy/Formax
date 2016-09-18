@@ -51,6 +51,9 @@
     
     _pdfPageInnerCoverView.layer.cornerRadius = 6;
     [self.parentViewController.view setAlpha:0];
+    
+    
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -95,8 +98,11 @@
     
     //int i;
     //for(i=0; i < numPages; i++) [self performSelector:@selector(changePageToEnd) withObject:self afterDelay:i+2];
-    //Bring to Frong and Show Modal View
-    //[self performSegueWithIdentifier:@"gotoOfficeRegistrationNavigationViewControllerSegue" sender:self];
+    //Bring to Frong and Show Modal View\
+    
+    [UITools replaceTopConstraintOnView:self.view dstView:_pdfPageCoverView withConstant:self.view.bounds.size.height];
+    [UITools replaceBottomConstraintOnView:self.view dstView:_pdfPageCoverView withConstant:-self.view.bounds.size.height];
+    [self performSegueWithIdentifier:@"gotoOfficeRegistrationNavigationViewControllerSegue" sender:self];
 }
 
 -(void) changePageToEnd{
@@ -221,6 +227,7 @@
 }
 
 
+/*
 -(UIPageViewControllerSpineLocation)pageViewController:(UIPageViewController *)pageViewController spineLocationForInterfaceOrientation:(UIInterfaceOrientation)orientation{
     if(orientation == UIInterfaceOrientationLandscapeRight || orientation == UIInterfaceOrientationLandscapeLeft){
         PDFWithThemeRefPageViewViewController* first = self.PageViewController.viewControllers.firstObject;
@@ -236,6 +243,18 @@
     [self.PageViewController setViewControllers:@[vc] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
         return UIPageViewControllerSpineLocationMin;
     }
+}
+ */
+
+-(void) showSampleForm{
+    [UIView animateWithDuration:0.4 animations:^{
+        NSLog(@"Displaying");
+        [UITools replaceTopConstraintOnView:self.view dstView:_pdfPageCoverView withConstant:0];
+        //[UITools replaceBottomConstraintOnView:self.view dstView:_pdfPageCoverView withConstant:0];
+        [self.view layoutIfNeeded];
+        [self.pdfPageInnerCoverView setNeedsDisplay];
+    }];
+    
 }
 
 @end

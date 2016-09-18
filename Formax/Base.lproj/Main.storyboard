@@ -3277,22 +3277,22 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="QrM-8w-wIT" firstAttribute="top" secondItem="kqs-eO-9pm" secondAttribute="top" id="cqm-FN-w3w"/>
-                                    <constraint firstAttribute="trailing" secondItem="QrM-8w-wIT" secondAttribute="trailing" id="dOJ-vR-EHZ"/>
-                                    <constraint firstItem="QrM-8w-wIT" firstAttribute="leading" secondItem="kqs-eO-9pm" secondAttribute="leading" id="uuA-fM-C5F"/>
-                                    <constraint firstAttribute="bottom" secondItem="QrM-8w-wIT" secondAttribute="bottom" id="zuI-vT-luh"/>
+                                    <constraint firstItem="QrM-8w-wIT" firstAttribute="leading" secondItem="kqs-eO-9pm" secondAttribute="leading" id="JNo-vU-mCm"/>
+                                    <constraint firstAttribute="trailing" secondItem="QrM-8w-wIT" secondAttribute="trailing" id="Pow-6V-ZdF"/>
+                                    <constraint firstAttribute="bottom" secondItem="QrM-8w-wIT" secondAttribute="bottom" id="m90-pR-1mK"/>
+                                    <constraint firstItem="QrM-8w-wIT" firstAttribute="top" secondItem="kqs-eO-9pm" secondAttribute="top" id="yOJ-2i-6Kq"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="u7A-xy-38U" firstAttribute="top" secondItem="kqs-eO-9pm" secondAttribute="bottom" id="Lq8-QE-gvI"/>
+                            <constraint firstItem="kqs-eO-9pm" firstAttribute="top" secondItem="jua-S1-Y6W" secondAttribute="bottom" id="11R-XU-ZX9"/>
+                            <constraint firstItem="kqs-eO-9pm" firstAttribute="leading" secondItem="pUS-Id-Txp" secondAttribute="leadingMargin" constant="-20" id="UXh-Wb-g3a"/>
+                            <constraint firstItem="u7A-xy-38U" firstAttribute="top" secondItem="kqs-eO-9pm" secondAttribute="bottom" id="XQK-ss-sSM"/>
                             <constraint firstAttribute="bottom" secondItem="IxB-15-FdK" secondAttribute="bottom" id="XvN-TJ-kUD"/>
-                            <constraint firstItem="kqs-eO-9pm" firstAttribute="leading" secondItem="pUS-Id-Txp" secondAttribute="leading" id="e2U-I6-R33"/>
                             <constraint firstAttribute="trailing" secondItem="IxB-15-FdK" secondAttribute="trailing" id="ffV-GE-qVe"/>
-                            <constraint firstItem="kqs-eO-9pm" firstAttribute="top" secondItem="pUS-Id-Txp" secondAttribute="top" id="ggY-2g-xFb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kqs-eO-9pm" secondAttribute="trailing" constant="-20" id="iLX-tz-6BD"/>
                             <constraint firstItem="IxB-15-FdK" firstAttribute="leading" secondItem="pUS-Id-Txp" secondAttribute="leading" id="itW-5E-gzq"/>
-                            <constraint firstAttribute="trailing" secondItem="kqs-eO-9pm" secondAttribute="trailing" id="tn9-MR-kFv"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -3376,10 +3376,10 @@
             </objects>
             <point key="canvasLocation" x="1859" y="-2949"/>
         </scene>
-        <!--View Controller-->
+        <!--Office Registration Get Started View Controller-->
         <scene sceneID="TYR-ra-d2j">
             <objects>
-                <viewController id="xjT-Ht-Cqr" sceneMemberID="viewController">
+                <viewController id="xjT-Ht-Cqr" customClass="OfficeRegistrationGetStartedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vm0-IU-k3e"/>
                         <viewControllerLayoutGuide type="bottom" id="Bap-nw-uyt"/>
@@ -3395,13 +3395,13 @@
                                         <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-o0-hBp">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-o0-hBp">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="sCs-Li-RZL"/>
                                         </constraints>
                                         <string key="text">By registering your practice, you agree to our Terms and that you have read our Privacy Policy. 
-Input your practice information: Name, address, phone number, email address.
+Input your practice information: Name, address, phone number, email and website address.
 This one-time setup procedure creates your practice profile.
 </string>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3415,7 +3415,7 @@ This one-time setup procedure creates your practice profile.
                                         <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="21"/>
                                         <state key="normal" title="Get started"/>
                                         <connections>
-                                            <segue destination="bg7-Xm-yif" kind="show" id="VcA-qP-u2X"/>
+                                            <segue destination="5XY-ni-7f0" kind="show" id="W37-TC-e11"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -3433,7 +3433,7 @@ This one-time setup procedure creates your practice profile.
                                     <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="alreadyHaveAccountBtnPressed:" destination="5pS-6K-g0L" eventType="touchUpInside" id="iJj-Gs-fC7"/>
+                                    <action selector="onAlreadyHaveRegisteredBtnPressed:" destination="xjT-Ht-Cqr" eventType="touchUpInside" id="Xkn-38-QeT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3793,7 +3793,7 @@ This one-time setup procedure creates your practice profile.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqF-9j-bgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3240.8203125" y="-2949.0483162518299"/>
+            <point key="canvasLocation" x="2921" y="-2949"/>
         </scene>
         <!--Signup PageC View Controller-->
         <scene sceneID="cYB-b8-Bg0">
@@ -3985,7 +3985,7 @@ This one-time setup procedure creates your practice profile.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uz-Oz-6bD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2535.9375" y="-3755.0512445095164"/>
+            <point key="canvasLocation" x="1924" y="-3755"/>
         </scene>
         <!--Signup PageB View Controller-->
         <scene sceneID="Vdp-Hg-Cnx">
@@ -4209,7 +4209,7 @@ This one-time setup procedure creates your practice profile.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJw-uU-rEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858.4000000000001" y="-3755.1724137931037"/>
+            <point key="canvasLocation" x="1568" y="-3755"/>
         </scene>
         <!--Signup PageD View Controller-->
         <scene sceneID="7pi-2u-bKO">
@@ -4396,7 +4396,7 @@ This one-time setup procedure creates your practice profile.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPZ-Fu-tvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3240.8203125" y="-3755.0512445095164"/>
+            <point key="canvasLocation" x="2277" y="-3755"/>
         </scene>
         <!--Form Themes List View Controller-->
         <scene sceneID="jsi-ug-OWb">
@@ -4696,6 +4696,12 @@ This one-time setup procedure creates your practice profile.
                                             <action selector="onCloseBtnPressed:" destination="FFx-M4-BPv" id="t0T-qN-v6I"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xLY-nc-RAG"/>
+                                    <barButtonItem title="Resend code" id="dfZ-GY-Roy">
+                                        <connections>
+                                            <action selector="onResendCodeToolbarBtnPressed:" destination="FFx-M4-BPv" id="jKe-NS-RoO"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -4719,7 +4725,7 @@ This one-time setup procedure creates your practice profile.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeQ-ei-jf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3957.4218749999995" y="-3755.0512445095164"/>
+            <point key="canvasLocation" x="2641" y="-3755"/>
         </scene>
         <!--Office Registraton StepB View Controller-->
         <scene sceneID="v5o-ni-D2z">
@@ -4885,7 +4891,7 @@ This one-time setup procedure creates your practice profile.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FXf-9g-XPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3905.8593749999995" y="-2949.0483162518299"/>
+            <point key="canvasLocation" x="3282" y="-2949"/>
         </scene>
         <!--Office Registraton StepC View Controller-->
         <scene sceneID="QXi-bj-0Wi">
@@ -4952,7 +4958,7 @@ This one-time setup procedure creates your practice profile.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hW0-ap-rBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4560.9375" y="-2949.0483162518299"/>
+            <point key="canvasLocation" x="3653" y="-2949"/>
         </scene>
         <!--Source Forms List View Controller-->
         <scene sceneID="azs-R0-CV3">
@@ -5356,6 +5362,165 @@ This one-time setup procedure creates your practice profile.
             </objects>
             <point key="canvasLocation" x="2552" y="1917"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="SUX-n4-AKy">
+            <objects>
+                <viewController id="5XY-ni-7f0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f5M-Sh-Ld1"/>
+                        <viewControllerLayoutGuide type="bottom" id="m5V-0c-6OY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ozo-aO-0aL">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kt2-P3-5bE">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why to register your Practice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wu-Uu-NrF">
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="25"/>
+                                        <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BT-92-6ba">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="bT4-RB-4X1"/>
+                                        </constraints>
+                                        <string key="text">Registering Your Practice is the way to create Your Practice profile.
+
+All process and saved information and forms will be sealed using these information.</string>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecU-UX-Psp">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SnE-hc-eyz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="21"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="U2d-LS-xCx" kind="show" id="AhG-ve-79e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVF-tP-wkx">
+                                <items/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUr-2K-RQf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="QfC-qr-cwA"/>
+                                    <constraint firstAttribute="height" constant="30" id="mrX-PS-inx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                                <state key="normal" title="Already have a registered practice account?">
+                                    <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="alreadyHaveAccountBtnPressed:" destination="5pS-6K-g0L" eventType="touchUpInside" id="rYa-gy-FPx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m5V-0c-6OY" firstAttribute="top" secondItem="LUr-2K-RQf" secondAttribute="bottom" constant="8" id="79G-Vx-aY5"/>
+                            <constraint firstItem="Kt2-P3-5bE" firstAttribute="leading" secondItem="Ozo-aO-0aL" secondAttribute="leading" constant="20" id="IaP-O9-2Rc"/>
+                            <constraint firstItem="dVF-tP-wkx" firstAttribute="leading" secondItem="Ozo-aO-0aL" secondAttribute="leading" id="Qdp-eY-Vey"/>
+                            <constraint firstItem="Kt2-P3-5bE" firstAttribute="centerX" secondItem="Ozo-aO-0aL" secondAttribute="centerX" id="aLJ-Wg-749"/>
+                            <constraint firstItem="m5V-0c-6OY" firstAttribute="top" secondItem="dVF-tP-wkx" secondAttribute="bottom" id="axu-D9-Brd"/>
+                            <constraint firstItem="Kt2-P3-5bE" firstAttribute="centerY" secondItem="Ozo-aO-0aL" secondAttribute="centerY" id="gPj-bt-w3t"/>
+                            <constraint firstAttribute="trailing" secondItem="Kt2-P3-5bE" secondAttribute="trailing" constant="20" id="pBt-eX-AgY"/>
+                            <constraint firstItem="LUr-2K-RQf" firstAttribute="centerX" secondItem="Ozo-aO-0aL" secondAttribute="centerX" id="vkf-GG-muH"/>
+                            <constraint firstAttribute="trailing" secondItem="dVF-tP-wkx" secondAttribute="trailing" id="ykn-sP-9KF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6t7-lB-ieg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mlz-2G-uUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2921" y="-3297"/>
+        </scene>
+        <!--Office Registration Sample Form Display View Controller-->
+        <scene sceneID="54q-15-6Db">
+            <objects>
+                <viewController id="U2d-LS-xCx" customClass="OfficeRegistrationSampleFormDisplayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jw0-9v-byf"/>
+                        <viewControllerLayoutGuide type="bottom" id="exS-aB-A3X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nO4-jB-I9M">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3E0-g2-mMR">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAP-Pu-cGP">
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="25"/>
+                                        <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F7-Yk-ej7">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="vhN-kW-tzf"/>
+                                        </constraints>
+                                        <string key="text">All forms comes with header or footer titles (or both).
+Practice registered information provides key elements to be shown on the header and the footer of the Forms.
+
+You also have the ability to choose which part of information to displayed and shown inside the forms.</string>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mod-gD-aVY">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BUZ-xX-1Y6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="21"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="bg7-Xm-yif" kind="show" id="d6X-Yj-fab"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UM7-U5-awe">
+                                <items/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQ2-M5-bF3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Ix-gN-T7W"/>
+                                    <constraint firstAttribute="width" constant="300" id="Ezi-tD-WPz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                                <state key="normal" title="Already have a registered practice account?">
+                                    <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="alreadyHaveAccountBtnPressed:" destination="5pS-6K-g0L" eventType="touchUpInside" id="U4Q-4V-pnP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UM7-U5-awe" secondAttribute="trailing" id="3dZ-3x-HJS"/>
+                            <constraint firstItem="3E0-g2-mMR" firstAttribute="centerX" secondItem="nO4-jB-I9M" secondAttribute="centerX" id="3e0-P3-N8P"/>
+                            <constraint firstItem="UM7-U5-awe" firstAttribute="leading" secondItem="nO4-jB-I9M" secondAttribute="leading" id="5Vs-AH-V57"/>
+                            <constraint firstItem="3E0-g2-mMR" firstAttribute="leading" secondItem="nO4-jB-I9M" secondAttribute="leading" constant="20" id="G4l-FF-Bdr"/>
+                            <constraint firstItem="FQ2-M5-bF3" firstAttribute="centerX" secondItem="nO4-jB-I9M" secondAttribute="centerX" id="KL2-5G-0N3"/>
+                            <constraint firstItem="exS-aB-A3X" firstAttribute="top" secondItem="UM7-U5-awe" secondAttribute="bottom" id="LyZ-XW-1RU"/>
+                            <constraint firstItem="3E0-g2-mMR" firstAttribute="centerY" secondItem="nO4-jB-I9M" secondAttribute="centerY" id="WFt-Td-L5s"/>
+                            <constraint firstItem="exS-aB-A3X" firstAttribute="top" secondItem="FQ2-M5-bF3" secondAttribute="bottom" constant="8" id="iBC-KT-tPu"/>
+                            <constraint firstAttribute="trailing" secondItem="3E0-g2-mMR" secondAttribute="trailing" constant="20" id="zI8-rs-DGB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xqe-V3-g2N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0a-dy-QGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3282" y="-3297"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AppIcon76x76" width="76" height="76"/>
@@ -5381,8 +5546,8 @@ This one-time setup procedure creates your practice profile.
         <image name="usFlagIcon" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uSA-yG-q7T"/>
         <segue reference="fd7-mi-6QT"/>
         <segue reference="sUF-wz-T6g"/>
+        <segue reference="uSA-yG-q7T"/>
     </inferredMetricsTieBreakers>
 </document>

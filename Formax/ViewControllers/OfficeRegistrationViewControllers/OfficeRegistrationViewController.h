@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIView *pdfPageInnerCoverView;
 
 -(void)UpdateTheme;
+-(void) showSampleForm;
 
 @end

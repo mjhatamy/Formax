@@ -42,7 +42,6 @@
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
-    ALog("View disapeared");
     [appMngr.mscs getDelegateOwnership];
     
     [super viewDidDisappear:animated];

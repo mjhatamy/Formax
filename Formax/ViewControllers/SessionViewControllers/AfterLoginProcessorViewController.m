@@ -95,7 +95,7 @@
                     }else{ //Show Error Message and Make Next Btn to Retry
                         //Show Error Message and Hide all fields
                         
-                        [UITools ShowOkCancelAlertDialogWithUIViewController:self Title:NSLocalizedString(@"No network connection", @"No network connection")  andMessage:NSLocalizedString(@"In order to continye, You must connect to the internet and press retry button.", @"Network Connection is required and Retry") WithOkButtonEnabled:YES OkButtonTitle:@"Retry" WithCancelButtonEnabled:YES CancelButtonTitle:@"Cancel" CompletionHandler:^(BOOL OKorCancel) {
+                        [UITools ShowOkCancelAlertDialogWithUIViewController:self Title:NSLocalizedString(@"No network connection", @"No network connection")  andMessage:NSLocalizedString(@"In order to continue, You must connect to the internet and press retry button.", @"Network Connection is required and Retry") WithOkButtonEnabled:YES OkButtonTitle:@"Retry" WithCancelButtonEnabled:YES CancelButtonTitle:@"Cancel" CompletionHandler:^(BOOL OKorCancel) {
                             dispatch_async(dispatch_get_main_queue(), ^{
                                 if(!OKorCancel){
                                     [[appMngr.mscs getCurrentUser] signOut];
@@ -110,10 +110,7 @@
                         }];
                         return;
                     }
-                    
-                    
                 }else {
-                    ALog(@"%ld, %@", task.error.code, task.error.localizedDescription);
                     [UITools ShowOkCancelAlertDialogWithUIViewController:self Title:NSLocalizedString(@"Unknown Error", @"Unknown")  andMessage:task.error.localizedDescription WithOkButtonEnabled:YES OkButtonTitle:@"Retry" WithCancelButtonEnabled:YES CancelButtonTitle:@"Cancel" CompletionHandler:^(BOOL OKorCancel) {
                         dispatch_async(dispatch_get_main_queue(), ^{
                             if(!OKorCancel){
