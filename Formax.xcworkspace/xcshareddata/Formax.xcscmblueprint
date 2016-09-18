@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B2C93D0BCF871CA7F4A50326C328EDD619E03708",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B2C93D0BCF871CA7F4A50326C328EDD619E03708" : 9223372036854775807,
+    "DFFCBC87D94ADBFCC08D3D766084140E8165F0EC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8863ABCB-6AC6-467C-A4BC-537A413D4369",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B2C93D0BCF871CA7F4A50326C328EDD619E03708" : "Formax\/",
+    "DFFCBC87D94ADBFCC08D3D766084140E8165F0EC" : "JidCustom\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Formax",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Formax.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mjhatamy\/Formax.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B2C93D0BCF871CA7F4A50326C328EDD619E03708"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mjhatamy\/JidCustom.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DFFCBC87D94ADBFCC08D3D766084140E8165F0EC"
+    }
+  ]
+}

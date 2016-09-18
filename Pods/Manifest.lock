@@ -1,0 +1,83 @@
+PODS:
+  - AWSAutoScaling (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSCloudWatch (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSCognito (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSCognitoIdentityProvider (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSCore (2.4.8)
+  - AWSDynamoDB (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSEC2 (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSElasticLoadBalancing (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSIoT (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSKinesis (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSLambda (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSMachineLearning (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSMobileAnalytics (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSS3 (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSSES (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSSimpleDB (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSSNS (2.4.8):
+    - AWSCore (= 2.4.8)
+  - AWSSQS (2.4.8):
+    - AWSCore (= 2.4.8)
+  - MGSwipeTableCell (1.5.5)
+
+DEPENDENCIES:
+  - AWSAutoScaling
+  - AWSCloudWatch
+  - AWSCognito
+  - AWSCognitoIdentityProvider
+  - AWSCore
+  - AWSDynamoDB
+  - AWSEC2
+  - AWSElasticLoadBalancing
+  - AWSIoT
+  - AWSKinesis
+  - AWSLambda
+  - AWSMachineLearning
+  - AWSMobileAnalytics
+  - AWSS3
+  - AWSSES
+  - AWSSimpleDB
+  - AWSSNS
+  - AWSSQS
+  - MGSwipeTableCell
+
+SPEC CHECKSUMS:
+  AWSAutoScaling: ecaf5d0416d936383fff59939bbd088da6a9b546
+  AWSCloudWatch: 8514147be6e89da2bd8837a92b6adaa073e9ad91
+  AWSCognito: 63ae70c4ff94656f7a36892c45680bbb311b7381
+  AWSCognitoIdentityProvider: a36003a2eef4376d05525e0f4c2cc27e0c2351eb
+  AWSCore: 7bc7e845f532dedc65b133cdf518bb44a2e28dfe
+  AWSDynamoDB: aff5790ebf397c1865f99b7f764b67a3e7f379e0
+  AWSEC2: 3884da78f29029691b16858f57b5bd45b6202516
+  AWSElasticLoadBalancing: a072494922eda49eb006a75d836be193bd1d810d
+  AWSIoT: 4faa50a04c3c079fc84bc79dc052eca886c4d2b2
+  AWSKinesis: 74e1a5fb458fcbdb6a300f22ee108f4681793b6b
+  AWSLambda: ee460128289d04e9ae7ad1b2dab0ccb1ce40d888
+  AWSMachineLearning: ba63a25023cdecda5ebfdcfe1cf0692bc8ec3abd
+  AWSMobileAnalytics: 9322b149a4a20b23a2abee6df5c815634e313979
+  AWSS3: f48121d50ddd73e830c3522c44772a70fce29f27
+  AWSSES: aefa93d0811ae2b1157a1aa95461b31c7bb24d9d
+  AWSSimpleDB: 03048146ccd97e843d3e1dac897a3721a437c7d1
+  AWSSNS: 0a5cb37ca067a2bdc5271391dc44153b76324132
+  AWSSQS: 0b230fb376f7e7955c9c5c1ea41af2d5b7f041c0
+  MGSwipeTableCell: bafeb5f351124544c9364ecbdf24c7b06a37d340
+
+PODFILE CHECKSUM: 05185be5f0812d7a3ed831d3ec951c3c35a21267
+
+COCOAPODS: 1.0.1
