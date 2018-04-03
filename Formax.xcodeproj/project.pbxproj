@@ -19,6 +19,7 @@
 		C30317841D7B2D2200542515 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30317831D7B2D2200542515 /* ForgotPasswordViewController.m */; };
 		C30F2FA51D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30F2FA41D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.m */; };
 		C30F2FA81D8ED5300054753B /* OfficeRegistrationGetStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30F2FA71D8ED5300054753B /* OfficeRegistrationGetStartedViewController.m */; };
+		C30F2FAA1D8F05D70054753B /* PDFFormTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30F2FA91D8F05D70054753B /* PDFFormTextField.xib */; };
 		C3421EBB1D84073E004D0195 /* OfficeRegistratonStepAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3421EBA1D84073E004D0195 /* OfficeRegistratonStepAViewController.m */; };
 		C3421EBE1D840750004D0195 /* OfficeRegistratonStepBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3421EBD1D840750004D0195 /* OfficeRegistratonStepBViewController.m */; };
 		C3421EC11D840767004D0195 /* OfficeRegistratonStepCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3421EC01D840767004D0195 /* OfficeRegistratonStepCViewController.m */; };
@@ -175,7 +176,6 @@
 		C3AD54B21D86B64A00E2760F /* PDFFormChoiceFieldPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3AD548F1D86B64900E2760F /* PDFFormChoiceFieldPickerView.xib */; };
 		C3AD54B31D86B64A00E2760F /* PDFFormSignatureField.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AD54911D86B64900E2760F /* PDFFormSignatureField.m */; };
 		C3AD54B41D86B64A00E2760F /* PDFFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AD54931D86B64900E2760F /* PDFFormTextField.m */; };
-		C3AD54B51D86B64A00E2760F /* PDFFormTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3AD54941D86B64900E2760F /* PDFFormTextField.xib */; };
 		C3AD54B61D86B64A00E2760F /* PDFFormTextFieldInnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AD54961D86B64A00E2760F /* PDFFormTextFieldInnerView.m */; };
 		C3AD54B71D86B64A00E2760F /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AD54981D86B64A00E2760F /* PDFView.m */; };
 		C3AD54B81D86B64A00E2760F /* PDFWidgetAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AD549A1D86B64A00E2760F /* PDFWidgetAnnotationView.m */; };
@@ -515,6 +515,7 @@
 		C30F2FA41D8E68260054753B /* OfficeRegistrationSampleFormDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfficeRegistrationSampleFormDisplayViewController.m; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistrationSampleFormDisplayViewController.m; sourceTree = "<group>"; };
 		C30F2FA61D8ED5300054753B /* OfficeRegistrationGetStartedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeRegistrationGetStartedViewController.h; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistrationGetStartedViewController.h; sourceTree = "<group>"; };
 		C30F2FA71D8ED5300054753B /* OfficeRegistrationGetStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfficeRegistrationGetStartedViewController.m; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistrationGetStartedViewController.m; sourceTree = "<group>"; };
+		C30F2FA91D8F05D70054753B /* PDFFormTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PDFFormTextField.xib; path = ../../JidCustom/PDFViewer/Views/PDFFormTextField.xib; sourceTree = "<group>"; };
 		C3421EB91D84073E004D0195 /* OfficeRegistratonStepAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeRegistratonStepAViewController.h; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistratonStepAViewController.h; sourceTree = "<group>"; };
 		C3421EBA1D84073E004D0195 /* OfficeRegistratonStepAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfficeRegistratonStepAViewController.m; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistratonStepAViewController.m; sourceTree = "<group>"; };
 		C3421EBC1D840750004D0195 /* OfficeRegistratonStepBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeRegistratonStepBViewController.h; path = ViewControllers/OfficeRegistrationViewControllers/OfficeRegistratonStepBViewController.h; sourceTree = "<group>"; };
@@ -798,7 +799,6 @@
 		C3AD54911D86B64900E2760F /* PDFFormSignatureField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDFFormSignatureField.m; path = ../../JidCustom/PDFViewer/Views/PDFFormSignatureField.m; sourceTree = "<group>"; };
 		C3AD54921D86B64900E2760F /* PDFFormTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDFFormTextField.h; path = ../../JidCustom/PDFViewer/Views/PDFFormTextField.h; sourceTree = "<group>"; };
 		C3AD54931D86B64900E2760F /* PDFFormTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDFFormTextField.m; path = ../../JidCustom/PDFViewer/Views/PDFFormTextField.m; sourceTree = "<group>"; };
-		C3AD54941D86B64900E2760F /* PDFFormTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PDFFormTextField.xib; path = ../../JidCustom/PDFViewer/Views/PDFFormTextField.xib; sourceTree = "<group>"; };
 		C3AD54951D86B64900E2760F /* PDFFormTextFieldInnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDFFormTextFieldInnerView.h; path = ../../JidCustom/PDFViewer/Views/PDFFormTextFieldInnerView.h; sourceTree = "<group>"; };
 		C3AD54961D86B64A00E2760F /* PDFFormTextFieldInnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDFFormTextFieldInnerView.m; path = ../../JidCustom/PDFViewer/Views/PDFFormTextFieldInnerView.m; sourceTree = "<group>"; };
 		C3AD54971D86B64A00E2760F /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDFView.h; path = ../../JidCustom/PDFViewer/Views/PDFView.h; sourceTree = "<group>"; };
@@ -1800,9 +1800,9 @@
 				C3AD54911D86B64900E2760F /* PDFFormSignatureField.m */,
 				C3AD54921D86B64900E2760F /* PDFFormTextField.h */,
 				C3AD54931D86B64900E2760F /* PDFFormTextField.m */,
+				C30F2FA91D8F05D70054753B /* PDFFormTextField.xib */,
 				C3AD54951D86B64900E2760F /* PDFFormTextFieldInnerView.h */,
 				C3AD54961D86B64A00E2760F /* PDFFormTextFieldInnerView.m */,
-				C3AD54941D86B64900E2760F /* PDFFormTextField.xib */,
 				C3641D5E1D8C380B00439FC8 /* PDFFormAddressTextFieldInnerView.h */,
 				C3641D5F1D8C380B00439FC8 /* PDFFormAddressTextFieldInnerView.m */,
 				C3641D601D8C380B00439FC8 /* PDFFormAddressTextFieldInnerView.xib */,
@@ -2433,7 +2433,6 @@
 				C3F6499C1D7AA797005E6441 /* MonkeyWaiting_00035.png in Resources */,
 				C375F71E1D87386B00DC929D /* Theme1006.zip in Resources */,
 				C3F6497E1D7AA797005E6441 /* MonkeyWaiting_00005.png in Resources */,
-				C3AD54B51D86B64A00E2760F /* PDFFormTextField.xib in Resources */,
 				C3F64A261D7AB20D005E6441 /* MonkeyAnim_10.png in Resources */,
 				C3F64A2E1D7AB20D005E6441 /* MonkeyAnim_18.png in Resources */,
 				C3F649A91D7AA797005E6441 /* MonkeyWaiting_00048.png in Resources */,
@@ -2510,6 +2509,7 @@
 				C3F64A7D1D7AB20D005E6441 /* MonkeyAnim_97.png in Resources */,
 				C3B4B7291D7DB2FA0001407A /* TeethWhitening.pdf in Resources */,
 				C375F7461D87558100DC929D /* child_patientconsentform_Fillable.pdf in Resources */,
+				C30F2FAA1D8F05D70054753B /* PDFFormTextField.xib in Resources */,
 				C3F6493A1D7AA78D005E6441 /* MonkeyWaiting_00084.png in Resources */,
 				C3B4B7261D7DB2FA0001407A /* root_canal_treatment.pdf in Resources */,
 				C3F64A381D7AB20D005E6441 /* MonkeyAnim_28.png in Resources */,
